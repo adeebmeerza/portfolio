@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adeebmeerza Porfolio</title>
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+
+  <script src="https://kit.fontawesome.com/abaaf7b235.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navbar start -->
+  <nav class="nav-bar">
+    <div class="max-width nav-wrapper">
+      <!-- logo -->
+      <a id="logo" href="#home">
+        <img src="./assets/logo.svg" alt="logo / to home">
+      </a>
+
+      <!-- bar icon for mobile view -->
+      <a class="menu-button" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+      </a>
+
+      <!-- menu links -->
+      <ul class="menu">
+        <li><a href="#background" onclick="toggleMenu()">About</a></li>
+        <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#experiences" onclick="toggleMenu()">Experiences</a></li>
+        <li><a href="#works" onclick="toggleMenu()">Works</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Navbar end -->
+
+  <main>
+    <!-- Hero start -->
+    <section id="home">
+      <div id="home-grid"></div>
+      <div class="max-width" id="home-text">
+        <h1>Adib Mirza</h1>
+        <h1>Backend developer</h1>
+        <p>Crafting scalable, efficient and reliable system for digital solutions.</p>
+        <a href="#background" class="button" id="home-cta">
+          Explore more
+          <i class="fa-solid fa-circle-down"></i></a>
+      </div>
+      </div>
+    </section>
+    <!-- Hero end -->
+
+    <section class="max-width" id="background">
+      <hgroup class="title">
+        <span style="color: black;">About Me</span>
+        <h2>Who am I, What I do.</h2>
+      </hgroup>
+      <div class="content">
+        <div class="text" id="background-text">
+          <strong>Hello, I'm Adib!</strong>
+          <p>I'm a junior backend developer who specialized in building scalable, efficient and reliable system using
+            technologies like <span>TypeScript</span>, <span>JavaScript</span>, and <span>Node.js</span>.
+            With a strong eagerness to learn and continously improve, I aim to deliver high quality, performance-driven
+            software solutions.
+          </p>
+          <p>I hold a bachelor degree in Computer Science specializing in Bioinformatics, which has enriched my problem
+            solving and analytical skill. I'm excited about collaborating to transform a great ideas into impactful
+            products.</p>
+        </div>
+        <img src="./assets/profile-pic-small.png" alt="" id="profile-pic">
+      </div>
+    </section>
+
+    <section class="max-width" id="skills">
+      <hgroup class="title">
+        <span>Skills</span>
+        <h2>Technologies and tools in use</h2>
+      </hgroup>
+      <div class="content">
+        <div class="text">
+          <p>While in the industry, I've gained hands-on experience with a range of tools and
+            technologies for building web applications,
+            with a focus on backend development. My involvements spans monolith and microservices architecture, as well
+            as
+            relational and non-relational databases.</p>
+          <p>Current swiss tool is TypeScript, NestJs, and MongoDB, and working with RabbitMQ, however I'm willing to
+            learn other tools as well. To deepen my knowledge, I am
+            currently taking courses in backend development, database management, security, scalability, and DevOps.</p>
+        </div>
+
+        <div class="tools-wrapper">
+          <ul class="tools">
+            <li class="tool-left tool1">
+              <img src="./assets/skills/typescript.png" alt="">
+              <span>TypeScript</span>
+            </li>
+            <li class="tool-left tool2">
+              <img src="./assets/skills/js.png" alt="">
+              <span>JavaScript</span>
+            </li>
+            <li class="tool-left tool3">
+              <img src="./assets/skills/expressjs.png" alt="">
+              <span>Express.js</span>
+            </li>
+            <li class="tool-left tool4">
+              <img src="./assets/skills/nestjs.png" alt="">
+              <span>NestJS</span>
+            </li>
+            <li class="tool-left tool5">
+              <img src="./assets/skills/mysql.png" alt="">
+              <span>MySQL</span>
+            </li>
+          </ul>
+          <ul class="tools">
+            <li class="tool-right tool1">
+              <img src="./assets/skills/mongodb.png" alt="">
+              <span>MongoDB</span>
+            </li>
+            <li class="tool-right tool2">
+              <img src="./assets/skills/postgres.png" alt="">
+              <span>PostgreSQL</span>
+            </li>
+            <li class="tool-right tool3">
+              <img src="./assets/skills/render.png" alt="">
+              <span>Render</span>
+            </li>
+            <li class="tool-right tool4">
+              <img src="./assets/skills/gh-actions.png" alt="">
+              <span>GitHub Actions</span>
+            </li>
+            <li class="tool-right tool5">
+              <img src="./assets/skills/docker.png" alt="">
+              <span>Docker</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="max-width" id="experiences">
+      <hgroup class="title">
+        <span>Work Experiences</span>
+        <h2>Career journey</h2>
+      </hgroup>
+      <div class="timeline">
+        <div class="container" id="bed">
+          <div class="year">June 2023 - Current</div>
+          <div class="experience">
+            <strong>Executive, Back End Developer <span> &centerdot; Aerodyne Group</span></strong>
+            <br>Contributed to the development of backend microservices of the
+            AI-driven SaaS drone super-platform for critical intelligence.
+          </div>
+        </div>
+
+        <div class="container" id="gsd">
+          <div class="year">Jan 2022 - May 2023</div>
+          <div class="experience">
+            <strong>Graduate Software Developer<span> &centerdot; Synapse Innovation</span></strong>
+            <br>Charged in building aerial images processer and manager while
+            maintaining existing deskright application and web page.
+          </div>
+        </div>
+
+        <div class="container" id="isd">
+          <div class="year">2020</div>
+          <div class="experience">
+            <strong>Intern, Software Development<span> &centerdot; Synapse Innovation</span></strong>
+            <br>Assigned to research
+            and develop a desktop, block-based programming editor for early ages robotic learning kits.
+          </div>
+        </div>
+    </section>
+
+    <section class="max-width" id="works">
+      <hgroup class="title">
+        <span>Works</span>
+        <h2>Past projects and works</h2>
+      </hgroup>
+      <ul id="works-item">
+        <li>
+          <div>
+            <strong>Event scheduler</strong>
+            Task scheduler to trigger recurrence processes in across microservices for internal use, such as for
+            trigger both weekly report generation and data cleanup simultaneuosly.
+          </div>
+          <ul class="stack">
+            <li>NestJs</li>
+            <li>MongoDB</li>
+            <li>RabbitMQ</li>
+          </ul>
+        </li>
+        <li>
+          <div>
+            <strong>Structured asset management by site hierarchy</strong>
+            Structuring asset data based on site hierarchy, e.g Country > Region > Zone > Site
+          </div>
+          <ul class="stack">
+            <li>NestJs</li>
+            <li>MongoDB</li>
+          </ul>
+        </li>
+        <li>
+          <div>
+            <strong>Audit trail</strong>
+            Track user activities, including creating, modifying and deleting workspace data, with an overview
+            displayed on the admin dashboard.
+          </div>
+          <ul class="stack">
+            <li>NestJs</li>
+            <li>MongoDB</li>
+          </ul>
+        </li>
+        <li>
+          <div>
+            <strong>RBAC authorization</strong>
+            Develop role-based access control (RBAC) to secure feature access and permissions, tied to SaaS
+            subscription plans. This involves creating custom guard to enforce permissions and managing the access
+            control list (ACL) for role and resource mappings.
+          </div>
+          <ul class="stack">
+            <li>NestJS</li>
+            <li>MongoDB</li>
+          </ul>
+        </li>
+        <li>
+          <div>
+            <strong>IOT devices activation scheduler</strong>
+            Schedule activation of sensors and feeders for aquafarming water quality and growth control.
+          </div>
+          <ul class="stack">
+            <li>NestJS</li>
+            <li>MongoDB</li>
+            <li>Tasmota</li>
+          </ul>
+        </li>
+        <li>
+          <div>
+            <strong>Drone photogrammetry processor</strong>
+            <p>Image processor that ingest drone aerial images dataset to produce DSM/DTM/DEM, point cloud, and 3D
+              mesh.</p>
+          </div>
+          <ul class="stack">
+            <li>OpenDroneMap</li>
+            <li>Express.js</li>
+            <li>MySQL</li>
+            <li>AWS S3</li>
+          </ul>
+        </li>
+        <li>
+          <div>
+            <strong>Label management</strong>
+            Dynamic database of annotation labels either in vertical or horizontal form.
+          </div>
+          <ul class="stack">
+            <li>Express.js</li>
+            <li>MySQL</li>
+          </ul>
+        </li>
+        <li>
+          <div>
+            <strong>Block-based programming editor for microcontroller</strong>
+            A programming editor that allows to produce code by arranging code blocks and uploads it to ESP32
+            microcontroller board. Written for Windows platform.
+          </div>
+          <ul class="stack">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JQuery</li>
+            <li>Arduino </li>
+            <li>ESP32</li>
+          </ul>
+        </li>
+        <li>
+          <div>
+            <strong>Product landing page</strong>
+            Maintained product landing page for an educational robotic learning kit.
+          </div>
+          <ul class="stack">
+            <li>HTML</li>
+            <li>Bootstrap</li>
+            <li>JavaScript</li>
+          </ul>
+      </ul>
+    </section>
+
+    <section class="max-width" id="contact">
+      <hgroup class="title">
+        <span>Contact</span>
+        <h2>Get in touch</h2>
+      </hgroup>
+      <div class="container">
+        <div class="contact-info">
+          <p>I'm always excited to connect! Whether it's for networking, collaboration, or accessing my
+            resume, feel free to reach out.</p>
+          <div id="details">
+            <div><i class="fa-solid fa-user"></i> <strong>Name:</strong> Adib Haziq Mirza Bin Mohid</div>
+            <div><i class="fa-solid fa-location-dot"></i> <strong>Address:</strong> Cyberjaya, Malaysia</div>
+            <div><i class="fa-solid fa-envelope"></i> <strong>Email:</strong> <a
+                href="mailto:adib.haziq.dev@gmail.com">adib.haziq.dev@gmail.com</a></div>
+          </div>
+          <div id="social-media">
+            <a href="https://www.linkedin.com/in/adibmirza"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/adeebmeerza"><i class="fa-brands fa-square-github"></i></a>
+            <a href="mailto:adib.haziq.dev@gmail.com?subject=Request%20for%20resume" id="resume">Get my resume <i
+                class="fa-solid fa-square-arrow-up-right"></i></a>
+          </div>
+
+        </div>
+        <form method="POST" id="form">
+          <input type="hidden" name="access_key" value="742050c7-9d47-41b5-b6de-d4de42172d88">
+
+          <input type="text" name="name" placeholder="Name" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="text" name="subject" placeholder="Subject" required>
+
+          <textarea name="message" placeholder="Message..." required></textarea>
+
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="max-width content">
+      <div>2025 <a href="#" id="name">Adeebmeerza.</a></div>
+      <div id="social-media">
+        <a href="https://github.com/adeebmeerza"><i class="fa-brands fa-github"></i></a>
+        <a href="www.linkedin.com/in/adibmirza"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
