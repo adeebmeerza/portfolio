@@ -13,21 +13,24 @@
 
 <body>
   <!-- Navbar start -->
-  <nav class="nav-bar">
+  <nav>
     <div class="max-width nav-wrapper">
       <!-- logo -->
-      <a id="logo" href="#home">
-        <img src="./assets/logo.svg" alt="logo / to home">
+      <a href="#home">
+        <img src="./assets/logo.svg" alt="logo / to home" id="logo">
       </a>
 
       <!-- bar icon for mobile view -->
       <a class="menu-button" onclick="toggleMenu()">
-        <i class="fa-solid fa-bars" aria-hidden="true"></i>
-        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+        <!-- <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        <i class="fa-solid fa-xmark" aria-hidden="true"></i> -->
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
       </a>
 
       <!-- menu links -->
-      <ul class="menu">
+      <ul>
         <li><a href="#background" onclick="toggleMenu()">About</a></li>
         <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
         <li><a href="#experiences" onclick="toggleMenu()">Experiences</a></li>
@@ -56,7 +59,7 @@
 
     <section class="max-width" id="background">
       <hgroup class="title">
-        <span style="color: black;">About Me</span>
+        <span>About Me</span>
         <h2>Who am I, What I do.</h2>
       </hgroup>
       <div class="content">
@@ -71,7 +74,7 @@
             solving and analytical skill. I'm excited about collaborating to transform a great ideas into impactful
             products.</p>
         </div>
-        <img src="./assets/profile-pic-small.png" alt="" id="profile-pic">
+        <img src="./assets/profile-pic.png" alt="" id="profile-pic">
       </div>
     </section>
 
@@ -162,7 +165,7 @@
           <div class="experience">
             <strong>Graduate Software Developer<span> &centerdot; Synapse Innovation</span></strong>
             <br>Charged in building aerial images processer and manager while
-            maintaining existing deskright application and web page.
+            maintaining existing desktop application and web page.
           </div>
         </div>
 
@@ -182,7 +185,7 @@
         <h2>Past projects and works</h2>
       </hgroup>
       <ul id="works-item">
-        <li>
+        <li class="show">
           <div>
             <strong>Event scheduler</strong>
             Task scheduler to trigger recurrence processes in across microservices for internal use, such as for
@@ -194,7 +197,7 @@
             <li>RabbitMQ</li>
           </ul>
         </li>
-        <li>
+        <li class="show">
           <div>
             <strong>Structured asset management by site hierarchy</strong>
             Structuring asset data based on site hierarchy, e.g Country > Region > Zone > Site
@@ -215,7 +218,7 @@
             <li>MongoDB</li>
           </ul>
         </li>
-        <li>
+        <li class="show">
           <div>
             <strong>RBAC authorization</strong>
             Develop role-based access control (RBAC) to secure feature access and permissions, tied to SaaS
@@ -298,27 +301,32 @@
           <p>I'm always excited to connect! Whether it's for networking, collaboration, or accessing my
             resume, feel free to reach out.</p>
           <div id="details">
-            <div><i class="fa-solid fa-user"></i> <strong>Name:</strong> Adib Haziq Mirza Bin Mohid</div>
-            <div><i class="fa-solid fa-location-dot"></i> <strong>Address:</strong> Cyberjaya, Malaysia</div>
-            <div><i class="fa-solid fa-envelope"></i> <strong>Email:</strong> <a
+            <div><i class="fa-solid fa-user"></i>Adib Haziq Mirza Bin Mohid</div>
+            <div><i class="fa-solid fa-location-dot"></i>Cyberjaya, Malaysia</div>
+            <div><i class="fa-solid fa-envelope"></i><a
                 href="mailto:adib.haziq.dev@gmail.com">adib.haziq.dev@gmail.com</a></div>
           </div>
           <div id="social-media">
-            <a href="https://www.linkedin.com/in/adibmirza"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/adeebmeerza"><i class="fa-brands fa-square-github"></i></a>
-            <a href="mailto:adib.haziq.dev@gmail.com?subject=Request%20for%20resume" id="resume">Get my resume <i
-                class="fa-solid fa-square-arrow-up-right"></i></a>
+            <div class="sm">
+              <a href="https://www.linkedin.com/in/adibmirza"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="sm">
+              <a href="https://github.com/adeebmeerza"><i class="fa-brands fa-square-github"></i></a>
+            </div>
+            <div>
+              <a href="mailto:adib.haziq.dev@gmail.com?subject=Request%20for%20resume" id="resume"><span>Get my
+                  resume</span></a>
+            </div>
           </div>
 
         </div>
         <form method="POST" id="form">
           <input type="hidden" name="access_key" value="742050c7-9d47-41b5-b6de-d4de42172d88">
 
-          <input type="text" name="name" placeholder="Name" required>
-          <input type="email" name="email" placeholder="Email" required>
-          <input type="text" name="subject" placeholder="Subject" required>
-
-          <textarea name="message" placeholder="Message..." required></textarea>
+          <input id="name" type="text" name="name" placeholder="Name" required>
+          <input id="email" type="email" name="email" placeholder="Email" required>
+          <input id="subject" type="text" name="subject" placeholder="Subject" required>
+          <textarea id="message" name="message" placeholder="Message..." required></textarea>
 
           <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
@@ -330,11 +338,8 @@
 
   <footer>
     <div class="max-width content">
-      <div>2025 <a href="#" id="name">Adeebmeerza.</a></div>
-      <div id="social-media">
-        <a href="https://github.com/adeebmeerza"><i class="fa-brands fa-github"></i></a>
-        <a href="www.linkedin.com/in/adibmirza"><i class="fa-brands fa-linkedin"></i></a>
-      </div>
+      <div>2025 <a href="#" id="name">Adeebmeerza</a></div>
+
     </div>
   </footer>
 
