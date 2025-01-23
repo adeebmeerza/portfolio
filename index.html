@@ -313,20 +313,24 @@
             <div class="sm">
               <a href="https://github.com/adeebmeerza"><i class="fa-brands fa-square-github"></i></a>
             </div>
-            <div>
-              <a href="mailto:adib.haziq.dev@gmail.com?subject=Request%20for%20resume" id="resume"><span>Get my
-                  resume</span></a>
-            </div>
+            <!-- <div id="resume-button"> -->
+            <a href="mailto:adib.haziq.dev@gmail.com?subject=Request%20for%20resume" id="resume">Resume <svg
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z"
+                  clip-rule="evenodd"></path>
+              </svg></a>
+            <!-- </div> -->
           </div>
 
         </div>
         <form method="POST" id="form">
           <input type="hidden" name="access_key" value="742050c7-9d47-41b5-b6de-d4de42172d88">
 
-          <input id="name" type="text" name="name" placeholder="Name" required>
-          <input id="email" type="email" name="email" placeholder="Email" required>
-          <input id="subject" type="text" name="subject" placeholder="Subject" required>
-          <textarea id="message" name="message" placeholder="Message..." required></textarea>
+          <input type="text" name="name" placeholder="Name" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="text" name="subject" placeholder="Subject" required>
+          <textarea name="message" placeholder="Message..." required></textarea>
 
           <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 

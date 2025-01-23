@@ -12,7 +12,9 @@ const xmark = document.getElementsByClassName('fa-xmark');
 function toggleMenu() {
     document.querySelector('.menu-button').classList.toggle('active');
     document.querySelector('ul').classList.toggle('active');
-    document.querySelector('nav').classList.toggle('shrink-nav')
+    const navClasses = document.querySelector('nav').classList;
+    if (!navClasses.contains('shrink-nav'))
+        navClasses.toggle('shrink-nav')
 }
 
 form.addEventListener('submit', function(e) {
